@@ -69,7 +69,7 @@ function createEventListeners() {
 function verifyAcres() {
    try {
       if (!(acresBox.value > 0)) throw "enter a positive acreage";
-      textFormCompleteness();
+      testFormCompleteness();
    }  catch(error) {
       messageElement.innerHTML = error;
       messageHeadElement.innerHTML = "";
@@ -86,7 +86,7 @@ function verifyMonths() {
    try {
       if (!(monthsBox.value >= 1 && monthsBox.value <= 12))
          throw "enter months between 1 and 12";
-      testFormCompleteness();
+         testFormCompleteness();
    } catch(error) {
       messageElement.innerHTML = error;
       messageHeadElement.innerHTML = "";
